@@ -60,11 +60,9 @@ def fractal_curve(size, depth, sign):
         tina.forward(size)
         tina.right(90)
         tina.forward(size)
-        tina.right(90)
-        tina.forward(size)
         tina.left(90)
-        tina.forward(size)
-        tina.left(90)
+    else: #draw 2 smaller curves, one flipped
+        fr
 
 
 
