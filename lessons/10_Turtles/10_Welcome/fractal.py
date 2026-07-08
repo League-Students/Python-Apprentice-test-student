@@ -58,11 +58,14 @@ def fractal_square(size,depth):
 def fractal_curve(size, depth, sign):
     if depth == 0: #draw a right angle
         tina.forward(size)
-        tina.right(90)
+        tina.right(90 * sign)
         tina.forward(size)
-        tina.left(90)
+        tina.left(90 * sign)
     else: #draw 2 smaller curves, one flipped
-        fr
+        fracral_curve(size/math.sqrt(2),depth-1,sign)
+        tina.right(90 * sign)
+        fracral_curve(size/math.sqrt(2),depth-1,-sign)
+        tina.left(90 * sign)
 
 
 
@@ -85,6 +88,6 @@ tina.penup()
 tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_hex(275,4)
+fractal_curve(1,0)
 
 turtle.exitonclick()
