@@ -2,7 +2,7 @@ import turtle
 
 tina = turtle.Turtle()
 screen = turtle.Screen()
-screen.setup(600,600)
+screen.setup(500,500)
 
 tina.speed(0)
 
@@ -19,7 +19,7 @@ def fractal_triangle(size,depth):
 
 #move tina to a good start spot
 tina.penup()
-tina.goto(-300,-300)
+tina.goto(-200,-200)
 tina.pendown()
 #draw the fractal
 fractal_triangle(200,1)
