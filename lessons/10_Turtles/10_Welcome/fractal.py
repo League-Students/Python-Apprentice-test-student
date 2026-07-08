@@ -58,7 +58,7 @@ def fractal_square(size,depth):
 
 
 
-      
+
 def fractal_triangle(size,depth):
     if depth == 0: #base case, draw a triangle
         #tina.begin_fill()
@@ -75,8 +75,9 @@ def fractal_triangle(size,depth):
 #move tina to a good start spot
 tina.penup()
 tina.goto(-275,-275)
+tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_triangle(550,7)
+fractal_square(550,3)
 
 turtle.exitonclick()
