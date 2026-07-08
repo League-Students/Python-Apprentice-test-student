@@ -9,7 +9,7 @@ screen.setup(560,565)
 tina.speed(0)
 
 def fractal_hex(size,depth):
-  if random.randint(0,10)>0:#depth == 0: # base case
+  if random.randint(0,9)>0:#depth == 0: # base case
     tina.left(30)
     tina.forward(size)
     tina.right(120)
