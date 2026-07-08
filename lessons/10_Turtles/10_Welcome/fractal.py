@@ -64,8 +64,8 @@ def fractal_curve(size, depth, sign=1):
     else: #draw 2 smaller curves, one flipped
         tina.left(45 * sign)
         fractal_curve(size/math.sqrt(2),depth-1,sign)
-        tina.right(135 * sign)
-        fractal_curve(size/math.sqrt(2),depth-1,sign)
+        tina.right(180 * sign)
+        fractal_curve(size/math.sqrt(2),depth-1,-sign)
         tina.left(135 * sign)
 
 
@@ -89,6 +89,6 @@ tina.penup()
 tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_curve(100,1)
+fractal_curve(100,2)
 
 turtle.exitonclick()
