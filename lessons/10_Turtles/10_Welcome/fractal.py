@@ -89,6 +89,6 @@ tina.penup()
 tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_curve(100,2)
+fractal_hex(100,2)
 
 turtle.exitonclick()
