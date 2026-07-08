@@ -9,6 +9,10 @@ def fractal_triangle(size,depth):
         for i in range(3):
             tina.forward(size)
             tina.left(120)
+    else: #recursive case, draw 3 smaller fractals
+        for i in range(3):
+            
+
 
 fractal_triangle(200,0)
 
