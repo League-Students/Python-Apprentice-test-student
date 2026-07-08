@@ -4,6 +4,8 @@ tina = turtle.Turtle()
 screen = turtle.Screen()
 screen.setup(600,600)
 
+tina.speed(0)
+
 def fractal_triangle(size,depth):
     if depth == 0: #base case, draw a triangle
         for i in range(3):
@@ -16,6 +18,6 @@ def fractal_triangle(size,depth):
             tina.left(120)
 
 
-fractal_triangle(200,2)
+fractal_triangle(200,1)
 
 turtle.exitonclick()
