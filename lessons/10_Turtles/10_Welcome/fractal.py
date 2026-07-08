@@ -1,4 +1,5 @@
 import turtle
+import math
 
 tina = turtle.Turtle()
 screen = turtle.Screen()
@@ -78,6 +79,6 @@ tina.penup()
 tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_hex(250,0)
+fractal_hex(275,4)
 
 turtle.exitonclick()
