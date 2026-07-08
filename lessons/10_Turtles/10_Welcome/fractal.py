@@ -55,8 +55,9 @@ def fractal_square(size,depth):
       tina.right(90)
 
 
-
-
+def fractal_curve(size, depth):
+    if depth == 0:
+        
 
 
 
