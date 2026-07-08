@@ -22,6 +22,6 @@ tina.penup()
 tina.goto(-275,-275)
 tina.pendown()
 #draw the fractal
-fractal_triangle(200,4)
+fractal_triangle(550,4)
 
 turtle.exitonclick()
