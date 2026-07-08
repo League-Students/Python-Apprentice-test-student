@@ -1,5 +1,6 @@
 import turtle
 import math
+import random
 
 tina = turtle.Turtle()
 screen = turtle.Screen()
@@ -90,8 +91,8 @@ tina.left(90)
 tina.pendown()
 #draw the fractal
 i= 0
-while true:
-    tina.
+while True:
+    tina.color((random.randint(256),random.randint(256),random.randint(256)))
     fractal_hex(300,i)
     i+=1
 
