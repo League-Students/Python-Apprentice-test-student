@@ -74,7 +74,7 @@ def fractal_triangle(size,depth):
 
 #move tina to a good start spot
 tina.penup()
-tina.goto(-275,-275)
+#tina.goto(-275,-275)
 tina.left(90)
 tina.pendown()
 #draw the fractal
