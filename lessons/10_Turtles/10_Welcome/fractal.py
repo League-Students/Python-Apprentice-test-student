@@ -2,7 +2,7 @@ import turtle
 
 tina = turtle.Turtle()
 screen = turtle.Screen()
-screen.setup(500,500)
+screen.setup(550,550)
 
 tina.speed(0)
 
@@ -22,6 +22,6 @@ tina.penup()
 tina.goto(-200,-200)
 tina.pendown()
 #draw the fractal
-fractal_triangle(200,1)
+fractal_triangle(200,4)
 
 turtle.exitonclick()
