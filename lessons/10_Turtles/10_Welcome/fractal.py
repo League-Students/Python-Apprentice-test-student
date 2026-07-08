@@ -91,7 +91,7 @@ tina.left(90)
 tina.pendown()
 #draw the fractal
 i= 0
-while True:
+while i < 2:
     tina.color(random.random(),random.random(),random.random())
     fractal_hex(300,i)
     i+=1
