@@ -91,7 +91,7 @@ tina.pendown()
 #draw the fractal
 i= 0
 while true:
-    tina.r
+    tina.
     fractal_hex(300,i)
     i+=1
 
