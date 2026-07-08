@@ -93,7 +93,7 @@ tina.pendown()
 i= 0
 while True:
     tina.color(random.random(),random.random(),random.random())
-    fractal_hex(300,i)
+    fractal_hex(300,1)
     i+=1
 
 turtle.exitonclick()
