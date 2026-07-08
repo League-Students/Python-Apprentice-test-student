@@ -64,6 +64,7 @@ def fractal_curve(size, depth):
         tina.forward(size)
         tina.left(90)
         tina.forward(size)
+        tina.left(90)
 
 
 
