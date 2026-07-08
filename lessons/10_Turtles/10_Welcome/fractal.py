@@ -78,6 +78,6 @@ tina.goto(-275,-275)
 tina.left(90)
 tina.pendown()
 #draw the fractal
-fractal_square(550,3)
+fractal_square(550,0)
 
 turtle.exitonclick()
