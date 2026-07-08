@@ -65,7 +65,7 @@ def fractal_curve(size, depth, sign=1):
         tina.left(45 * sign)
         fractal_curve(size/math.sqrt(2),depth-1,sign)
         tina.right(180 * sign)
-        fractal_curve(size/math.sqrt(2),depth-1,-sign)
+        fractal_curve(size/math.sqrt(2),depth-1,sign)
         tina.left(135 * sign)
 
 
