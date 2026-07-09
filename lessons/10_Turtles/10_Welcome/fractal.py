@@ -93,7 +93,7 @@ def fractal_cool(size,depth,color):
         #tina.end_fill()
   else: #recursive case, draw 4 smaller squares, slightly different colors
       for i in range(4):
-          color
+          color = color
           fractal_cool(size/2,depth-1)
           tina.forward(size)
           tina.left(120)
