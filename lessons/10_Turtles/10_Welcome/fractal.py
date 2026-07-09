@@ -85,8 +85,8 @@ def fractal_triangle(size,depth):
             tina.left(120)
 
 def nudge(color):
-  color += 256 + random.randint(-10,10)
-  return color % 256
+  color += 1 + random.randint(-0.05,0.05)
+  return color % 1
 
 def fractal_cool(size,depth,color):
   tina.penup()
@@ -100,7 +100,7 @@ def fractal_cool(size,depth,color):
   else: #recursive case, draw 4 smaller squares, slightly different colors
       for i in range(4):
           color = (nudge(color[0]),nudge(color[1]),nudge(color[2]))
-          fractal_cool(size/2,depth-1)
+          fractal_cool(size/2,depth-1,color)
           tina.forward(size/2)
           tina.left(90)
   tina.pendown()
