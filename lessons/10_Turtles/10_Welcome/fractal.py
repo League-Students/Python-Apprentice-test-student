@@ -85,7 +85,7 @@ def fractal_triangle(size,depth):
             tina.left(120)
 
 def nudge(color):
-  color += 1 + random.random()
+  color += 1 + random.random() * 0.1 - 0.05
   return color % 1
 
 def fractal_cool(size,depth,color):
@@ -101,7 +101,7 @@ def fractal_cool(size,depth,color):
       for i in range(4):
           color = (nudge(color[0]),nudge(color[1]),nudge(color[2]))
           fractal_cool(size/2,depth-1,color)
-          tina.forward(size/2)
+          tina.forward(size)
           tina.left(90)
   tina.pendown()
 
