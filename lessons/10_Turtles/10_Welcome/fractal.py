@@ -112,5 +112,5 @@ tina.pendown()
 #draw the fractal
 random_color = (random.random(),random.random(),random.random())
 fractal_cool(550,7,random_color)
-
+tina.
 turtle.exitonclick()
