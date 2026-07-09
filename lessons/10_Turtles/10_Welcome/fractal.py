@@ -110,7 +110,7 @@ tina.goto(-275,-275)
 #tina.left(90)
 tina.pendown()
 #draw the fractal
-random_color = (random.random(),random.random(),random.random())
-fractal_cool(550,7,random_color)
+random_color = (0,0,0)#random.random(),random.random(),random.random())
+fractal_cool(550,6,random_color)
 
 turtle.exitonclick()
