@@ -85,17 +85,18 @@ def fractal_triangle(size,depth):
             tina.left(120)
 
 def fractal_cool(size,depth,color):
-  if depth == 0: #base case, draw a triangle
+  if depth == 0: #base case, draw a square
         #tina.begin_fill()
-        for i in range(3):
+        for i in range(4):
             tina.forward(size)
-            tina.left(120)
+            tina.left(90)
         #tina.end_fill()
-    else: #recursive case, draw 3 smaller fractals
-        for i in range(3):
-            fractal_triangle(size/2,depth-1)
-            tina.forward(size)
-            tina.left(120)
+  else: #recursive case, draw 4 smaller squares, slightly different colors
+      for i in range(4):
+          color
+          fractal_cool(size/2,depth-1)
+          tina.forward(size)
+          tina.left(120)
 
 #move tina to a good start spot
 tina.penup()
