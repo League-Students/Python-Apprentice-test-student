@@ -84,6 +84,9 @@ def fractal_triangle(size,depth):
             tina.forward(size)
             tina.left(120)
 
+def fractal_cool(size,depth,color):
+  
+
 #move tina to a good start spot
 tina.penup()
 #tina.goto(-275,-275)
