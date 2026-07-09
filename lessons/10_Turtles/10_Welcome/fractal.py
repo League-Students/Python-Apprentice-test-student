@@ -84,7 +84,7 @@ def fractal_triangle(size,depth):
             tina.forward(size)
             tina.left(120)
 
-def adjust
+def adjust_
 
 def fractal_cool(size,depth,color):
   tina.penup()
