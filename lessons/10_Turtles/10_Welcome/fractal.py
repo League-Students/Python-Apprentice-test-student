@@ -85,7 +85,7 @@ def fractal_triangle(size,depth):
             tina.left(120)
 
 def nudge(color):
-  color += 1 + random.random() * 0.2 - 0.1
+  color += 1 + random.random() * 0.1 - 0.05
   return color % 1
 
 def fractal_cool(size,depth,color):
@@ -111,6 +111,6 @@ tina.goto(-275,-275)
 tina.pendown()
 #draw the fractal
 random_color = (random.random(),random.random(),random.random())
-fractal_cool(550,5,random_color)
+fractal_cool(550,7,random_color)
 
 turtle.exitonclick()
