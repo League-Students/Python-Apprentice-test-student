@@ -97,8 +97,8 @@ def fractal_cool(size,depth,color):
       for i in range(4):
           color = (color[0]+random.randint(-10,10),color[1]+random.randint(-10,10),color[2]+random.randint(-10,10))
           fractal_cool(size/2,depth-1)
-          tina.forward(size)
-          tina.left(120)
+          tina.forward(size/2)
+          tina.left(90)
   tina.pendown()
 
 #move tina to a good start spot
@@ -107,10 +107,6 @@ tina.penup()
 tina.left(90)
 tina.pendown()
 #draw the fractal
-i= 0
-while True:
-    tina.color(random.random(),random.random(),random.random())
-    fractal_hex(300,1)
-    i+=1
+tina.fractal_cool()
 
 turtle.exitonclick()
