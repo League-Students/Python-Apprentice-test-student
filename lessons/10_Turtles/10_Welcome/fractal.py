@@ -84,6 +84,8 @@ def fractal_triangle(size,depth):
             tina.forward(size)
             tina.left(120)
 
+def adjust
+
 def fractal_cool(size,depth,color):
   tina.penup()
   if depth == 0: #base case, draw a square
@@ -103,10 +105,10 @@ def fractal_cool(size,depth,color):
 
 #move tina to a good start spot
 tina.penup()
-#tina.goto(-275,-275)
+tina.goto(-275,-275)
 tina.left(90)
 tina.pendown()
 #draw the fractal
-tina.fractal_cool()
+tina.fractal_cool(500,0,)
 
 turtle.exitonclick()
