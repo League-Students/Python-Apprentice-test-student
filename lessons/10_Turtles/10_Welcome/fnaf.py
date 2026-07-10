@@ -12,9 +12,10 @@ screen.setup(500,500)
 cam_colors = ["white","blue","red","gray","green"]
 
 def move_tina():
+    global tina_progress
     tina_progress += 1
+    show
     screen.ontimer(move_tina,2000)
-    print("TINA MOVED")
 
 def show_animatronics(cam_num):
     #tina show
