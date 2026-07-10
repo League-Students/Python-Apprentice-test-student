@@ -19,7 +19,7 @@ def move_tina():
     else:
         tina_progress += 1
     show_animatronics()
-    screen.ontimer(move_tina,2000)
+    screen.ontimer(move_tina,5000)
 
 def scare_tina():
     global tina_progress
@@ -79,6 +79,6 @@ screen.onkey(exit_cam, "0")
 
 screen.onkey(scare_tina, "space")
 
-screen.ontimer(move_tina,2000)
+screen.ontimer(move_tina,5000)
 
 turtle.exitonclick()
