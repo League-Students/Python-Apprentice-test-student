@@ -21,6 +21,11 @@ def move_tina():
     show_animatronics()
     screen.ontimer(move_tina,2000)
 
+def scare_tina():
+    global tina_progress
+    global cam_num
+    if(tina_progress)
+
 def show_animatronics():
     global cam_num
     #tina show
@@ -69,6 +74,8 @@ screen.onkey(open_cam_3, "3")
 screen.onkey(open_cam_4, "4")
 screen.onkey(open_cam_5, "5")
 screen.onkey(exit_cam, "0")
+
+screen.onkey(scare_tina, "space")
 
 screen.ontimer(move_tina,2000)
 
