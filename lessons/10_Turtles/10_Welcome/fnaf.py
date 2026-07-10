@@ -9,7 +9,7 @@ cam_colors = ["red","black","white","blue","green"]
 
 def open_cam_1():
     print("cam 1 open")
-    tina.
+    screen.bgcolor(cam_colors[0])
 
 
 
