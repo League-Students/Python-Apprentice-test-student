@@ -11,8 +11,6 @@ def open_cam_1():
     print("cam 1 open")
     screen.bgcolor(cam_colors[0])
 
-
-
 screen.listen()
 screen.onkey(open_cam_1, "1")
 
