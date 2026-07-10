@@ -11,6 +11,10 @@ screen.setup(500,500)
 
 cam_colors = ["white","blue","red","gray","green"]
 
+def move_tina():
+    tina_progress += 1
+    
+
 def show_animatronics(cam_num):
     #tina show
     if(cam_num == tina_path[tina_progress]):
@@ -53,6 +57,6 @@ screen.onkey(open_cam_4, "4")
 screen.onkey(open_cam_5, "5")
 screen.onkey(exit_cam, "0")
 
-screen.ontimer(move_tina,)
+screen.ontimer(move_tina,2000)
 
 turtle.exitonclick()
