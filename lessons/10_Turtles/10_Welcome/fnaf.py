@@ -13,7 +13,7 @@ cam_colors = ["white","blue","red","gray","green"]
 
 def move_tina():
     tina_progress += 1
-    
+    screen.ontimer()
 
 def show_animatronics(cam_num):
     #tina show
