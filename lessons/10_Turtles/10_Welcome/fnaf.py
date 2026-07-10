@@ -5,7 +5,7 @@ tina = turtle.Turtle()
 tina.shape("turtle")
 tina_path = [1,2,4,5]
 tina_progress = 0
-cam_num = -1
+cam_num = 0
 
 screen = turtle.Screen()
 screen.setup(500,500)
@@ -18,7 +18,8 @@ def move_tina():
     show
     screen.ontimer(move_tina,2000)
 
-def show_animatronics(cam_num):
+def show_animatronics():
+    global cam_num
     #tina show
     if(cam_num == tina_path[tina_progress]):
         tina.showturtle()
