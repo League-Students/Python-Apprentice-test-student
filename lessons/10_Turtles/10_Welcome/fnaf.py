@@ -1,6 +1,8 @@
 import turtle
 
 tina = turtle.Turtle()
+tina.shape("turtle")
+tina.size(10)
 
 screen = turtle.Screen()
 screen.setup(500,500)
